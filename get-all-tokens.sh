@@ -13,7 +13,7 @@ indexFile='schema-index.txt'
 for file in $(find Bteq Proc Table View -type f)
 #for file in ./Bteq/STAGING/CUSTOMERS_PRE2STG.btq
 do
-	for word in $(tokenize.pl < $file)
+	for word in $(./tokenize.pl < $file)
 	do
 		echo $file:$word
 	done
