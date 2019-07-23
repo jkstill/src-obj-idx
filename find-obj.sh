@@ -13,6 +13,7 @@ set -u
 
 set GREP_COLORS='mt=0;30;42'
 
-grep --color "^${searchTerm}:" $idxFile
+grep --color -E ":${searchTerm}$|/${searchTerm}:" $idxFile
+
 
 
